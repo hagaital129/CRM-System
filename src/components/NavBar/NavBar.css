@@ -1,0 +1,48 @@
+/*-----Nav-----*/
+
+nav {
+ height: 100vh;
+ background-color: rgb(43, 43, 43);
+ color: white;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+nav .logo-container,
+nav .controls-container {
+ padding: 40px 25px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.controls-container{
+bottom: 600px;
+position: relative;
+}
+
+nav .logo-container {
+ width: 80px;
+}
+
+nav .icon {
+ color: white;
+ font-size: 50px;
+}
+
+nav .icon:hover {
+ cursor: pointer;
+}
+
+.nav-logos {
+ width: 30px;
+ height: 30px;
+ margin: 0 auto;
+ padding: 20px 0;
+}
+
+.nav-logos:hover{
+ cursor: pointer;
+}
