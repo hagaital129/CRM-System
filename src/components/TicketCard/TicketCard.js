@@ -13,7 +13,7 @@ const TicketCard = ({ color, ticket }) => {
 
    <Link to={`/ticket/${ticket.documentId}`} id='link'>
     <div className='ticket-color' style={{backgroundColor: color}}></div>
-    <h3>{ticket.title}</h3>
+    <h4>{ticket.title}</h4>
     <AvatarDisplay ticket={ticket} />
     <StatusDisplay status={ticket.status}></StatusDisplay>
     <PriorityDisplay priority={ticket.priority}></PriorityDisplay>

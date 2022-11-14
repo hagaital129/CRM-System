@@ -3,13 +3,13 @@ const StatusDisplay = ({ status }) => {
  const getColor = (status) => {
   let color;
   switch (status) {
-   case 'done':
+   case 'Completed':
     color = 'rgb(186,255,201'
     break
-   case 'working on it':
+   case 'On Work':
     color = 'rgb(255,223,186)'
     break
-   case 'stuck':
+   case 'Pending':
     color = 'rgb(255,179,186)'
     break
    default:
