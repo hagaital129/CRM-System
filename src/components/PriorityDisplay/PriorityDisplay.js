@@ -1,4 +1,3 @@
-import star from '../../images/star.png'
 
 const PriorityDisplay = ({ priority }) => {
  return (
