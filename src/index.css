@@ -23,4 +23,9 @@ body {
 
 .dashboard .ticket-container {
  height: 80vh;
+ color: black;
+}
+
+.headers {
+ color: black
 }

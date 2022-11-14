@@ -4,7 +4,7 @@ const Dashboard = () => {
 
   const tickets = [
     {
-      category: 'Q1 2022',
+      category: 'Project 1',
       color: 'red',
       title: 'Ticket name 1',
       owner: 'Hagai',
@@ -16,7 +16,7 @@ const Dashboard = () => {
       timestamp: '2022-11-22'
     },
     {
-      category: 'Q2 2022',
+      category: 'Project 2',
       color: 'blue',
       title: 'Ticket name 2',
       owner: 'Tal',
@@ -28,7 +28,7 @@ const Dashboard = () => {
       timestamp: '2022-11-14'
     },
     {
-      category: 'Q1 2022',
+      category: 'Project 3',
       color: 'green',
       title: 'Ticket name 3',
       owner: 'Hagai Tal',
@@ -42,11 +42,11 @@ const Dashboard = () => {
   ]
 
   const colors = [
-    'rgb(255,179,186)',
-    'rgb(255,223,186)',
-    'rgb(255,255,186)',
-    'rgb(186,255,201)',
-    'rgb(186,255,255)',
+    '#E3A72F',
+    '#27c4c1',
+    '#B6A999',
+    '#00CE9A',
+    '#009667',
   ]
 
   const uniqueCatagories = [
@@ -55,7 +55,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <h1>Dashboard</h1>
+      <h1 className='headers'>Dashboard</h1>
       <div className="ticket-container">
         {tickets && uniqueCatagories?.map((uniqueCategory, categoryIndex) => (
           <div key={categoryIndex}>
