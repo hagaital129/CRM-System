@@ -126,33 +126,28 @@ const TicketPage = () => {
        <label htmlFor='priority-5'>5</label>
       </div>
 
-      {editMode && <>
-       <input
-        type='range'
-        id='progress'
-        name='progress'
-        value={formData.progress}
-        min='0'
-        max='100'
-        onChange={handleChange}
-       />
-       <label htmlFor='progress'>Progress</label>
-
-
-
-       <label>Status</label>
-       <select
+      {editMode &&
+       <>
+        <input
+         type='range'
+         id='progress'
+         name='progress'
+         value={formData.progress}
+         min='0'
+         max='100'
+         onChange={handleChange} />
+        <label htmlFor='progress'>Progress</label>
+       <label>Status</label><select
         name='status'
         value={formData.status}
         onChange={handleChange}
        >
 
-        <option selected={formData.status === 'Completed'} value="Completed">Completed</option>
-        <option selected={formData.status === 'On Work'} value="On Work">On Work</option>
-        <option selected={formData.status === 'Stuck'} value="Stuck">Stuck</option>
-        <option selected={formData.status === 'Pending'} value="Pending">Pending</option>
-       </select>
-      </>
+         <option selected={formData.status === 'Completed'} value="Completed">Completed</option>
+         <option selected={formData.status === 'On Work'} value="on Work">On Work</option>
+         <option selected={formData.status === 'Stuck'} value="stuck">Stuck</option>
+         <option selected={formData.status === 'Pending'} value="pending">Pending</option>
+        </select></>
       }
 
       <input type='submit' />
@@ -180,7 +175,7 @@ const TicketPage = () => {
       />
       <div className='img-preview'>
        {formData.avatar && (
-        <img src={formData.avatar} alt='image preview' />
+        <img src={formData.avatar} alt='preview' />
        )}
       </div>
      </section>
